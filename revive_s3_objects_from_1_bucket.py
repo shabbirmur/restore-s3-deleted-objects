@@ -18,7 +18,7 @@ list_all_restored_objects = False
 s3 = boto3.resource('s3')
 
 # TODO: replace name-of-the-bucket with bucket name
-bucket_name = 'name-of-the-bucket'
+bucket_name = 'shabbmur-test-script'
 
 if bucket_name == 'name-of-the-bucket':
     logger.error("Please, set bucket_name before running this script")
@@ -28,7 +28,7 @@ if bucket_name == 'name-of-the-bucket':
 # Syntax:
 # datetime(year, month, day, hour, minute, second, microsecond, UTC-00:00)
 # Example:
-# point_of_restore = datetime.datetime(2022, 5, 6, 16, 0, 0, 0, pytz.UTC)
+point_of_restore = datetime.datetime(2023, 2, 23, 0, 0, 0, 0, pytz.UTC)
 
 try:
     logger.info("Variable point_of_restore has been set as %s", point_of_restore)
